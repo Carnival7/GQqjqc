@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *carImage;
+
 // 定义变量记录索引
 @property (nonatomic, assign)NSInteger index;
 // 记录上一次的位置
@@ -46,6 +47,7 @@
         // 左
         self.index += 1;
     }
+    
     
     // 处理越界
     if (self.index <= 0) {
